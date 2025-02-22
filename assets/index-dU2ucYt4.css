@@ -1201,10 +1201,12 @@ video {
 }
 
 @keyframes float {
+
     0%,
     to {
         transform: translateY(0)
     }
+
     50% {
         transform: translateY(-10px)
     }
@@ -1218,6 +1220,7 @@ video {
     0% {
         transform: translateY(0)
     }
+
     to {
         transform: translateY(20px)
     }
@@ -1479,8 +1482,7 @@ video {
 
 .bg-light-blue {
     --tw-bg-opacity: 1;
-    background-color: #087270;
-    /* background-color: rgb(243 8 8); */
+    background-color: rgb(243 8 8);
 }
 
 .bg-light-gray {
@@ -2119,13 +2121,16 @@ body {
 }
 
 @media (max-width: 770px) {
+
     .studio-gallary-slider .swiper-button-next,
     .studio-gallary-slider .swiper-button-prev {
         display: none !important
     }
+
     .studio-gallary-slider .swiper {
         width: 100% !important
     }
+
     .studio-gallary-slider .swiper-slide {
         max-width: 300px !important
     }
@@ -2144,6 +2149,7 @@ body {
     .first-cover img {
         aspect-ratio: 1/1
     }
+
     .text-extra {
         font-size: 6rem;
         line-height: .8
@@ -2181,6 +2187,7 @@ body {
         grid-column: unset;
         grid-row: unset
     }
+
     .right-23-r,
     .left-23-r {
         right: 10rem
@@ -2209,38 +2216,45 @@ body {
 }
 
 @media (max-width: 768px) {
+
     #header.nav-active,
     .nav-bar.nav-active:before {
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
         transition: all .4s ease-in-out
     }
+
     .menu-items-dev {
         height: 0px;
         width: 100%;
         transition: all .4s ease-in-out;
         min-height: 0vh
     }
+
     .nav-active .menu-items-dev {
         position: relative;
         height: auto;
         min-height: 20vh;
         width: 100%
     }
+
     .menu-items {
         display: none;
         transition: all .4s ease-in-out
     }
+
     .nav-active .menu-items {
         display: flex;
         flex-direction: column;
         gap: 24px;
         width: 100%
     }
+
     .nav-bar,
     .nav-active {
         background: #f9fdff
     }
+
     #header:not(.nav-active) .close-icon,
     .nav-active .menu-icon {
         display: none
@@ -2522,6 +2536,7 @@ body {
     0% {
         background-position: -650px 0
     }
+
     to {
         background-position: 650px 0
     }
@@ -2565,6 +2580,7 @@ body {
     0% {
         transform: rotate(0)
     }
+
     to {
         transform: rotate(360deg)
     }
@@ -2697,6 +2713,7 @@ textarea {
     .right-23-r {
         right: 4rem !important
     }
+
     .left-32-r {
         left: 4rem !important
     }
@@ -2706,6 +2723,7 @@ textarea {
     .right-23-r {
         right: 10rem
     }
+
     .left-32-r {
         left: 10rem !important
     }
@@ -2767,51 +2785,65 @@ textarea {
         margin-left: 0;
         margin-right: 0
     }
+
     .sm\:mt-10 {
         margin-top: 2.5rem
     }
+
     .sm\:h-14 {
         height: 3.5rem
     }
+
     .sm\:w-11\/12 {
         width: 91.666667%
     }
+
     .sm\:w-14 {
         width: 3.5rem
     }
+
     .sm\:max-w-none {
         max-width: none
     }
+
     .sm\:-translate-x-14 {
         --tw-translate-x: -3.5rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
+
     .sm\:grid-cols-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr))
     }
+
     .sm\:gap-x-5 {
         -moz-column-gap: 1.25rem;
         column-gap: 1.25rem
     }
+
     .sm\:gap-x-6 {
         -moz-column-gap: 1.5rem;
         column-gap: 1.5rem
     }
+
     .sm\:p-6 {
         padding: 1.5rem
     }
+
     .sm\:px-12 {
         padding-left: 3rem;
         padding-right: 3rem
     }
+
     .sm\:px-28 {
         padding-left: 7rem;
         padding-right: 7rem
     }
+
     .sm\:text-base {
         font-size: 1rem;
         line-height: 1.5rem
     }
+
     .sm\:text-lg {
         font-size: 1.125rem;
         line-height: 1.75rem
@@ -2822,262 +2854,342 @@ textarea {
     .md\:absolute {
         position: absolute
     }
+
     .md\:-bottom-16 {
         bottom: -4rem
     }
+
     .md\:-bottom-20 {
         bottom: -5rem
     }
+
     .md\:-left-14 {
         left: -3.5rem
     }
+
     .md\:-left-40 {
         left: -10rem
     }
+
     .md\:-right-12 {
         right: -3rem
     }
+
     .md\:bottom-0 {
         bottom: 0
     }
+
     .md\:bottom-\[0\%\] {
         bottom: 0%
     }
+
     .md\:top-1\/2 {
         top: 50%
     }
+
     .md\:top-\[36\%\] {
         top: 36%
     }
+
     .md\:order-1 {
         order: 1
     }
+
     .md\:order-4 {
         order: 4
     }
+
     .md\:col-span-2 {
         grid-column: span 2 / span 2
     }
+
     .md\:col-span-4 {
         grid-column: span 4 / span 4
     }
+
     .md\:mb-2 {
         margin-bottom: .5rem
     }
+
     .md\:mb-6 {
         margin-bottom: 1.5rem
     }
+
     .md\:mt-14 {
         margin-top: 3.5rem
     }
+
     .md\:mt-6 {
         margin-top: 1.5rem
     }
+
     .md\:block {
         display: block
     }
+
     .md\:flex {
         display: flex
     }
+
     .md\:hidden {
         display: none
     }
+
     .md\:h-12 {
         height: 3rem
     }
+
     .md\:h-16 {
         height: 4rem
     }
+
     .md\:h-20 {
         height: 5rem
     }
+
     .md\:h-40 {
         height: 10rem
     }
+
     .md\:h-60 {
         height: 15rem
     }
+
     .md\:h-\[30px\] {
         height: 30px
     }
+
     .md\:h-\[56vh\] {
         height: 56vh
     }
+
     .md\:h-\[64vh\] {
         height: 64vh
     }
+
     .md\:w-10\/12 {
         width: 83.333333%
     }
+
     .md\:w-20 {
         width: 5rem
     }
+
     .md\:w-24 {
         width: 6rem
     }
+
     .md\:w-40 {
         width: 10rem
     }
+
     .md\:w-9\/12 {
         width: 75%
     }
+
     .md\:w-auto {
         width: auto
     }
+
     .md\:max-w-\[84\.5rem\] {
         max-width: 84.5rem
     }
+
     .md\:-translate-y-1 {
         --tw-translate-y: -.25rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
+
     .md\:translate-y-0 {
         --tw-translate-y: 0px;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
+
     .md\:translate-y-12 {
         --tw-translate-y: 3rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
+
     .md\:grid-cols-12 {
         grid-template-columns: repeat(12, minmax(0, 1fr))
     }
+
     .md\:grid-cols-6 {
         grid-template-columns: repeat(6, minmax(0, 1fr))
     }
+
     .md\:flex-row {
         flex-direction: row
     }
+
     .md\:items-start {
         align-items: flex-start
     }
+
     .md\:items-center {
         align-items: center
     }
+
     .md\:justify-between {
         justify-content: space-between
     }
+
     .md\:gap-4 {
         gap: 1rem
     }
+
     .md\:gap-x-10 {
         -moz-column-gap: 2.5rem;
         column-gap: 2.5rem
     }
+
     .md\:gap-x-32 {
         -moz-column-gap: 8rem;
         column-gap: 8rem
     }
+
     .md\:gap-x-4 {
         -moz-column-gap: 1rem;
         column-gap: 1rem
     }
+
     .md\:gap-x-5 {
         -moz-column-gap: 1.25rem;
         column-gap: 1.25rem
     }
+
     .md\:gap-y-10 {
         row-gap: 2.5rem
     }
+
     .md\:gap-y-5 {
         row-gap: 1.25rem
     }
+
     .md\:rounded-3xl {
         border-radius: 1.5rem
     }
+
     .md\:px-12 {
         padding-left: 3rem;
         padding-right: 3rem
     }
+
     .md\:px-14 {
         padding-left: 3.5rem;
         padding-right: 3.5rem
     }
+
     .md\:px-20 {
         padding-left: 5rem;
         padding-right: 5rem
     }
+
     .md\:px-6 {
         padding-left: 1.5rem;
         padding-right: 1.5rem
     }
+
     .md\:px-\[18px\] {
         padding-left: 18px;
         padding-right: 18px
     }
+
     .md\:py-14 {
         padding-top: 3.5rem;
         padding-bottom: 3.5rem
     }
+
     .md\:py-4 {
         padding-top: 1rem;
         padding-bottom: 1rem
     }
+
     .md\:py-6 {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem
     }
+
     .md\:pb-14 {
         padding-bottom: 3.5rem
     }
+
     .md\:pb-20 {
         padding-bottom: 5rem
     }
+
     .md\:pb-4 {
         padding-bottom: 1rem
     }
+
     .md\:pt-0 {
         padding-top: 0
     }
+
     .md\:pt-14 {
         padding-top: 3.5rem
     }
+
     .md\:pt-2 {
         padding-top: .5rem
     }
+
     .md\:pt-20 {
         padding-top: 5rem
     }
+
     .md\:pt-32 {
         padding-top: 8rem
     }
+
     .md\:pt-4 {
         padding-top: 1rem
     }
+
     .md\:pt-8 {
         padding-top: 2rem
     }
+
     .md\:text-start {
         text-align: start
     }
+
     .md\:text-2xl {
         font-size: 1.5rem;
         line-height: 2rem
     }
+
     .md\:text-\[28px\] {
         font-size: 28px
     }
+
     .md\:text-\[32px\] {
         font-size: 32px
     }
+
     .md\:text-base {
         font-size: 1rem;
         line-height: 1.5rem
     }
+
     .md\:text-lg {
         font-size: 1.125rem;
         line-height: 1.75rem
     }
+
     .md\:text-xl {
         font-size: 1.25rem;
         line-height: 1.75rem
     }
+
     .md\:\!leading-7 {
         line-height: 1.75rem !important
     }
+
     .md\:leading-\[44px\] {
         line-height: 44px
     }
+
     .md\:leading-\[51px\] {
         line-height: 51px
     }
@@ -3087,157 +3199,204 @@ textarea {
     .lg\:absolute {
         position: absolute
     }
+
     .lg\:order-1 {
         order: 1
     }
+
     .lg\:order-2 {
         order: 2
     }
+
     .lg\:col-span-1 {
         grid-column: span 1 / span 1
     }
+
     .lg\:col-span-10 {
         grid-column: span 10 / span 10
     }
+
     .lg\:col-span-4 {
         grid-column: span 4 / span 4
     }
+
     .lg\:col-span-6 {
         grid-column: span 6 / span 6
     }
+
     .lg\:mx-0 {
         margin-left: 0;
         margin-right: 0
     }
+
     .lg\:mb-5 {
         margin-bottom: 1.25rem
     }
+
     .lg\:mb-8 {
         margin-bottom: 2rem
     }
+
     .lg\:mt-4 {
         margin-top: 1rem
     }
+
     .lg\:block {
         display: block
     }
+
     .lg\:flex {
         display: flex
     }
+
     .lg\:hidden {
         display: none
     }
+
     .lg\:h-12 {
         height: 3rem
     }
+
     .lg\:h-14 {
         height: 3.5rem
     }
+
     .lg\:h-\[57\%\] {
         height: 57%
     }
+
     .lg\:h-\[60\%\] {
         height: 60%
     }
+
     .lg\:min-h-\[calc\(100vh-120px\)\] {
         min-height: calc(100vh - 120px)
     }
+
     .lg\:w-12 {
         width: 3rem
     }
+
     .lg\:w-14 {
         width: 3.5rem
     }
+
     .lg\:w-36 {
         width: 9rem
     }
+
     .lg\:w-5 {
         width: 1.25rem
     }
+
     .lg\:w-6 {
         width: 1.5rem
     }
+
     .lg\:w-7 {
         width: 1.75rem
     }
+
     .lg\:-translate-y-16 {
         --tw-translate-y: -4rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
+
     .lg\:-translate-y-24 {
         --tw-translate-y: -6rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
+
     .lg\:translate-y-4 {
         --tw-translate-y: 1rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
+
     .lg\:grid-cols-1 {
         grid-template-columns: repeat(1, minmax(0, 1fr))
     }
+
     .lg\:grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr))
     }
+
     .lg\:flex-row {
         flex-direction: row
     }
+
     .lg\:gap-4 {
         gap: 1rem
     }
+
     .lg\:gap-x-20 {
         -moz-column-gap: 5rem;
         column-gap: 5rem
     }
+
     .lg\:rounded-3xl {
         border-radius: 1.5rem
     }
+
     .lg\:px-0 {
         padding-left: 0;
         padding-right: 0
     }
+
     .lg\:px-16 {
         padding-left: 4rem;
         padding-right: 4rem
     }
+
     .lg\:px-20 {
         padding-left: 5rem;
         padding-right: 5rem
     }
+
     .lg\:py-12 {
         padding-top: 3rem;
         padding-bottom: 3rem
     }
+
     .lg\:py-5 {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem
     }
+
     .lg\:pb-0 {
         padding-bottom: 0
     }
+
     .lg\:pb-14 {
         padding-bottom: 3.5rem
     }
+
     .lg\:pb-20 {
         padding-bottom: 5rem
     }
+
     .lg\:pt-36 {
         padding-top: 9rem
     }
+
     .lg\:pt-8 {
         padding-top: 2rem
     }
+
     .lg\:text-2xl {
         font-size: 1.5rem;
         line-height: 2rem
     }
+
     .lg\:text-3xl {
         font-size: 1.875rem;
         line-height: 2.25rem
     }
+
     .lg\:text-5xl {
         font-size: 3rem;
         line-height: 1
     }
+
     .lg\:text-lg {
         font-size: 1.125rem;
         line-height: 1.75rem
@@ -3248,40 +3407,51 @@ textarea {
     .xl\:mb-2 {
         margin-bottom: .5rem
     }
+
     .xl\:mb-8 {
         margin-bottom: 2rem
     }
+
     .xl\:flex {
         display: flex
     }
+
     .xl\:h-\[48vh\] {
         height: 48vh
     }
+
     .xl\:grid-cols-12 {
         grid-template-columns: repeat(12, minmax(0, 1fr))
     }
+
     .xl\:gap-x-0 {
         -moz-column-gap: 0px;
         column-gap: 0px
     }
+
     .xl\:px-12 {
         padding-left: 3rem;
         padding-right: 3rem
     }
+
     .xl\:px-20 {
         padding-left: 5rem;
         padding-right: 5rem
     }
+
     .xl\:pl-16 {
         padding-left: 4rem
     }
+
     .xl\:pr-12 {
         padding-right: 3rem
     }
+
     .xl\:text-6xl {
         font-size: 3.75rem;
         line-height: 1
     }
+
     .xl\:text-lg {
         font-size: 1.125rem;
         line-height: 1.75rem
@@ -3292,82 +3462,107 @@ textarea {
     .\32xl\:relative {
         position: relative
     }
+
     .\32xl\:-right-3 {
         right: -.75rem
     }
+
     .\32xl\:left-20 {
         left: 5rem
     }
+
     .\32xl\:left-\[9\%\] {
         left: 9%
     }
+
     .\32xl\:top-0 {
         top: 0
     }
+
     .\32xl\:top-32 {
         top: 8rem
     }
+
     .\32xl\:order-1 {
         order: 1
     }
+
     .\32xl\:block {
         display: block
     }
+
     .\32xl\:hidden {
         display: none
     }
+
     .\32xl\:h-72 {
         height: 18rem
     }
+
     .\32xl\:max-h-\[185\%\] {
         max-height: 185%
     }
+
     .\32xl\:w-\[100\%\] {
         width: 100%
     }
+
     .\32xl\:w-\[840px\] {
         width: 840px
     }
+
     .\32xl\:w-full {
         width: 100%
     }
+
     .\32xl\:max-w-2xl {
         max-width: 42rem
     }
+
     .\32xl\:-translate-x-5 {
         --tw-translate-x: -1.25rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
+
     .\32xl\:-translate-y-20 {
         --tw-translate-y: -5rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
     }
+
     .\32xl\:grid-cols-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr))
     }
+
     .\32xl\:flex-row {
         flex-direction: row
     }
+
     .\32xl\:items-start {
         align-items: flex-start
     }
+
     .\32xl\:rounded-t-3xl {
         border-top-left-radius: 1.5rem;
         border-top-right-radius: 1.5rem
     }
+
     .\32xl\:px-64 {
         padding-left: 16rem;
         padding-right: 16rem
     }
+
     .\32xl\:pt-24 {
         padding-top: 6rem
     }
+
     .\32xl\:pt-40 {
         padding-top: 10rem
     }
+
     .\32xl\:text-start {
         text-align: start
     }
+
     .\32xl\:text-3xl {
         font-size: 1.875rem;
         line-height: 2.25rem
@@ -3378,21 +3573,27 @@ textarea {
     .\33xl\:-left-20 {
         left: -5rem
     }
+
     .\33xl\:left-24 {
         left: 6rem
     }
+
     .\33xl\:left-40 {
         left: 10rem
     }
+
     .\33xl\:top-80 {
         top: 20rem
     }
+
     .\33xl\:w-10 {
         width: 2.5rem
     }
+
     .\33xl\:max-w-\[1364px\] {
         max-width: 1364px
     }
+
     .\33xl\:text-lg {
         font-size: 1.125rem;
         line-height: 1.75rem
@@ -3631,6 +3832,7 @@ textarea {
     0% {
         transform: rotate(0)
     }
+
     to {
         transform: rotate(360deg)
     }
@@ -3866,6 +4068,7 @@ textarea {
 }
 
 @media (hover: hover) {
+
     .carousel__prev:hover,
     .carousel__next:hover {
         color: var(--vc-nav-color-hover)
@@ -5165,8 +5368,3 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 
-/* مة */
-
-.close-icon {
-    display: none;
-}
