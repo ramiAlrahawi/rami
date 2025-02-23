@@ -5368,3 +5368,29 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 
+.service-title {
+
+    top: 10px;
+    /* المسافة من الأعلى */
+    left: 10px;
+    /* المسافة من اليسار */
+    z-index: 2;
+    /* لضمان ظهور النص فوق الصورة */
+    background: rgba(0, 0, 0, 0.6);
+    /* خلفية شفافة للنص */
+    padding: 10px;
+
+}
+
+.service-title span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFD700;
+    /* لون ذهبي للترقيم */
+}
+
+.service-title .service-name {
+    color: white;
+    /* لون أبيض لاسم الخدمة */
+    margin-right: 8px;
+}
