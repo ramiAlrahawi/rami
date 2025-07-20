@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>
+        مؤسسة شعار الأمان الأمنية
+
+    </title>
+
+    <meta name="description" content="
+    مؤسسة شعار الأمان تقدم أحدث أنظمة الأمن والمراقبة في المملكة. تركيب كاميرات مراقبة، أقفال ذكية، أنظمة إنذار، وأجهزة تتبع بجودة عالية وخبرة طويلة. اتصل بنا الآن لحماية منزلك أو منشأتك التجارية.">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        .accordion-button {
+            direction: rtl !important;
+            text-align: right !important;
+            white-space: normal !important;
+            padding-left: 2rem !important;
+            padding-right: 1rem !important;
+            position: relative !important;
+        }
+        /* حدد مكان الأيقونة + / - في اليسار يدوياً */
+        
+        .accordion-button::after {
+            position: absolute !important;
+            left: 0.75rem !important;
+            right: auto !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        
+        .contact-link {
+            display: flex;
+            justify-content: space-between;
+            /* الأيقونة (السهم) على اليسار، المحتوى على اليمين */
+            align-items: center;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-family: 'Cairo', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            background: #007bff;
+            color: #fff;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            /* الأيقونة على اليمين في RTL */
+            direction: rtl;
+        }
+        
+        .contact-info i {
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+        
+        .contact-text {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+        
+        .contact-text h6 {
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .contact-text h4 {
+            margin: 0;
+            font-weight: normal;
+        }
+        
+        .contact-link i.arrow {
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        
+        .contact-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+            background: #d4cdff;
+            /* الخلفية اللي طلبتها */
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            /* خلي النص أبيض للوضوح */
+            font-family: 'Cairo', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            background: #6659c0;
+            /* لون أغمق شوي عند التمرير */
+            color: #fff;
+        }
+        
+        .contact-info i {
+            font-size: 28px;
+            flex-shrink: 0;
+            color: #fff;
+            /* الأيقونات أبيض */
+        }
+        
+        .contact-link i.arrow {
+            font-size: 20px;
+            flex-shrink: 0;
+            color: #fff;
+            /* سهم أبيض */
+        }
+        /* هاهاها */
+        /* هاهاها */
+        /* هاهاها */
+        /* هاهاها */
+        
+        .fixed-contact-buttons {
+            position: fixed;
+            top: 40%;
+            left: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 10000;
+        }
+        
+        .fixed-contact-buttons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 28px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            animation: float 2.5s ease-in-out infinite;
+            cursor: pointer;
+        }
+        /* ألوان الأزرار */
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+        
+        .call-btn {
+            background-color: #007bff;
+            animation-delay: 1.2s;
+            /* تأخير لزر الاتصال */
+        }
+        /* حركة تموج بسيطة */
+        
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            }
+            50% {
+                transform: translateY(-8px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+            }
+        }
+        /* عند تمرير الماوس يتوقف التموج */
+        
+        .fixed-contact-buttons a:hover {
+            animation-play-state: paused;
+            box-shadow: 0 8px 14px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body style=" font-family: 'Cairo', sans-serif;">
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <!-- <h1>Scholar</h1> -->
+                            <img src="assets/images/logooo.png" alt="شعار المؤسسة" style="height: 120px;">
+
+                        </a>
+
+
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html" class="active">الرئيسية </a></li>
+                            <li class="scroll-to-section"><a href="index.html" class="active">من نحن</a></li>
+                            <li class="scroll-to-section"><a href="index.html">خدماتنا</a></li>
+                            <li class="scroll-to-section"><a href="index.html">الأسئلة الشائعة</a></li>
+                            <li class="scroll-to-section"><a href="index.html">لماذا تختارنا</a></li>
+                            <li class="scroll-to-section"><a href="index.html">تواصل معنا</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="main-banner" id="top" style="padding-bottom: 30px;  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-banner">
+                        <div class="item item-1">
+                            <div class="header-text" style="direction: rtl; text-align: center; margin: 0 auto; max-width: 100%;">
+                                <span class="category">نرحب بك في</span>
+                                <!-- <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br> -->
+
+                                <h2 style="direction: rtl; font-size: 1.5rem; margin-bottom: 15px; "> مؤسسة شعار الأمان الأمنية </h2>
+                                <p style="direction: rtl;">
+
+                                    مرحبًا بكم في مؤسسة شعار الأمان، رواد الحلول الأمنية والتقنية المتكاملة في المملكة. نقدم لكم أحدث التقنيات العالمية في مجال الأنظمة الأمنية لتوفير الحماية والأمان الكامل لمنزلك، مكتبك، أو منشأتك التجارية.
+                                </p>
+
+
+
+                                <br>
+                                <div class="main-button">
+                                    <a href="#">راسلنا واتساب</a>
+                                </div>
+                                <br>
+                                <div class="main-button">
+                                    <a href="#"> اتصل بنا</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- قسم المقالات -->
+    <section id="article-1" class="articles-section" style="direction: rtl; font-family: 'Cairo', sans-serif; padding: 40px 20px; background-color: #f7f7fc;">
+        <div class="container" style="max-width: 1200px; margin: auto;">
+            <div class="section-heading" style="text-align: center; margin-bottom: 40px;">
+                <h2 style="color: #7a6ad8; font-weight: bold;">مقالاتنا</h2>
+                <p style="color: #555;">تابع أحدث المقالات والنصائح في مجال الأنظمة الأمنية والتقنيات الحديثة</p>
+            </div>
+
+            <div id="articles-container" class="row" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+
+
+
+                <article style="background: white; border-radius: 8px; box-shadow: 0 0 10px rgb(122 106 216 / 0.15); max-width: 350px; flex: 1 1 300px; display: flex; flex-direction: column;">
+                    <img src="assets/images/mqala1.png" alt="أنظمة الأمن والمراقبة الحديثة" style="border-radius: 8px 8px 0 0; width: 100%; height: 180px; object-fit: cover;">
+                    <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <h3 style="color: #7a6ad8; margin-bottom: 10px; font-weight: 700;">أهمية تركيب أنظمة الأمن والمراقبة الحديثة لحماية منزلك ومنشأتك التجارية</h3>
+
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            في عالمنا الحديث، أصبحت أنظمة الأمن والمراقبة من الضروريات الأساسية لكل منزل ومنشأة تجارية. فالجرائم والسرقات في ازدياد مستمر، مما يستدعي الاعتماد على تقنيات حديثة للحفاظ على سلامة الأفراد والممتلكات.
+                        </p>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">ما هي أنظمة الأمن والمراقبة؟</h4>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            أنظمة الأمن والمراقبة تشمل كاميرات المراقبة، أجهزة الإنذار، أنظمة التحكم في الدخول، الأقفال الذكية، وأجهزة تتبع المركبات والممتلكات. هذه الأنظمة تتيح لك مراقبة منزلك أو عملك عن بعد وفي أي وقت، مع إمكانية التنبيه الفوري عند وجود أي خطر.
+                        </p>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">الفوائد الرئيسية لتركيب أنظمة الأمن</h4>
+                        <ul style="color: #666; margin-bottom: 15px; padding-left: 20px;">
+                            <li>حماية فعالة من السرقة والتعديات.</li>
+                            <li>مراقبة مستمرة على مدار الساعة عبر الهواتف الذكية.</li>
+                            <li>زيادة ثقة العملاء والعاملين في بيئة آمنة.</li>
+                            <li>خفض التكاليف الناتجة عن الخسائر والسرقات.</li>
+                            <li>سهولة التحكم والمراقبة من أي مكان بالعالم.</li>
+                        </ul>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">كيف تختار نظام الأمن المناسب؟</h4>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            عند اختيار نظام الأمن، يجب مراعاة حجم المكان، نوع النشاط، ميزانيتك، ومستوى الحماية المطلوب. من الأفضل الاعتماد على شركة ذات خبرة طويلة مثل
+                            <strong> مؤسسة شعار الأمان الأمنية </strong>، حيث نقدم حلول مخصصة تناسب كل احتياجاتك مع ضمان الجودة والدعم الفني المستمر.
+                        </p>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">اتصل بنا اليوم لتركيب أفضل أنظمة الأمن</h4>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            لا تترك أمان منزلك أو عملك للصدفة، تواصل معنا الآن للحصول على استشارة مجانية وعرض مخصص لتركيب أنظمة أمن ومراقبة حديثة تلبي جميع متطلباتك.
+                        </p>
+
+                        <a href="index.html" style="margin-top: auto; text-align: center; color: #fff; background-color: #7a6ad8; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: 700; display: inline-block;">
+      تواصل معنا الآن
+    </a>
+                    </div>
+                </article>
+
+
+
+
+                <article id="article-2" style="background: white; border-radius: 8px; box-shadow: 0 0 10px rgb(122 106 216 / 0.15); max-width: 350px; flex: 1 1 300px; display: flex; flex-direction: column;">
+                    <img src="assets/images/mqala2.png" alt="كاميرات المراقبة السلكية واللاسلكية" style="border-radius: 8px 8px 0 0; width: 100%; height: 180px; object-fit: cover;">
+                    <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <h3 style="color: #7a6ad8; margin-bottom: 10px; font-weight: 700;">الفرق بين كاميرات المراقبة السلكية واللاسلكية: ما الأفضل لك؟</h3>
+
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            عند التفكير في تركيب نظام مراقبة فعال، يواجه الكثيرون الحيرة في اختيار النوع الأنسب من الكاميرات: السلكية أم اللاسلكية؟ كل نوع له مميزاته وتحدياته، واختيار الأفضل يعتمد على احتياجاتك وظروف الموقع.
+                        </p>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">📡 أولاً: الكاميرات اللاسلكية</h4>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            تعتمد على الواي فاي لنقل الفيديو، وتُعتبر خيارًا مرنًا وسهل التركيب دون الحاجة إلى تمديد الأسلاك في الجدران.
+                        </p>
+                        <ul style="color: #666; margin-bottom: 15px; padding-left: 20px;">
+                            <li><strong>المميزات:</strong> تركيب سريع، مرونة في تغيير الموقع، متصلة بتطبيقات الجوال بسهولة.</li>
+                            <li><strong>العيوب:</strong> تتأثر بجودة شبكة الإنترنت، وقد تكون أقل استقرارًا في الأماكن الكبيرة.</li>
+                        </ul>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">🔌 ثانيًا: الكاميرات السلكية</h4>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            تتصل عبر كابلات مباشرة (مثل coaxial أو Ethernet) وتوفر بث فيديو مستقر عالي الجودة دون تأثر بالإشارة اللاسلكية.
+                        </p>
+                        <ul style="color: #666; margin-bottom: 15px; padding-left: 20px;">
+                            <li><strong>المميزات:</strong> أداء ثابت، مناسبة للمواقع الكبيرة أو التي تحتوي على عوائق كثيرة.</li>
+                            <li><strong>العيوب:</strong> تحتاج لتمديد أسلاك مما قد يزيد من تكلفة التركيب، وتقل مرونة تغيير أماكنها.</li>
+                        </ul>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">⚖️ أيهما تختار؟</h4>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            إذا كنت تبحث عن سهولة وسرعة في التركيب، فالكاميرات اللاسلكية خيار رائع. أما إذا كنت ترغب في نظام طويل الأمد ومستقر، فإن الكاميرات السلكية هي الأفضل. يمكنك أيضًا الجمع بين النوعين بحسب الحاجة.
+                        </p>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">لماذا نرشح شعار الأمان؟</h4>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            نحن في <strong>شعار الأمان</strong> نوفّر لك استشارة مجانية لاختيار الأنسب لك، وتركيب احترافي، وضمان على الأجهزة والخدمة. خبرتنا تجعلنا نعرف بالضبط ما يناسب منزلك أو مشروعك.
+                        </p>
+
+                        <a href="index.html" style="margin-top: auto; text-align: center; color: #fff; background-color: #7a6ad8; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: 700; display: inline-block;">
+            احصل على عرضك الآن مجاناً
+        </a>
+                    </div>
+                </article>
+
+
+
+                <article id="article-3" style="background: white; border-radius: 8px; box-shadow: 0 0 10px rgb(122 106 216 / 0.15); max-width: 350px; flex: 1 1 300px; display: flex; flex-direction: column;">
+                    <img src="assets/images/mqala3.png" alt="الأنظمة الذكية في المنازل" style="border-radius: 8px 8px 0 0; width: 100%; height: 180px; object-fit: cover;">
+                    <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <h3 style="color: #7a6ad8; margin-bottom: 10px; font-weight: 700;">هل الأنظمة الذكية أصبحت ضرورة في المنازل الحديثة؟</h3>
+
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            في ظل التطور التقني السريع الذي يشهده العالم، أصبحت الأنظمة الذكية جزءًا لا يتجزأ من تصميم المنازل الحديثة. لم تعد هذه الأنظمة رفاهية، بل تحوّلت إلى ضرورة أساسية تعزز الراحة، الأمان، والكفاءة في إدارة المنزل.
+                        </p>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">ما هي الأنظمة الذكية؟</h4>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            تشمل الأنظمة الذكية مجموعة من التقنيات التي تتيح لك التحكم في الإضاءة، التكييف، الأبواب، الكاميرات، الإنذار، وحتى الأجهزة المنزلية عبر الهاتف الذكي أو الأوامر الصوتية. كل ذلك يتم من خلال ربط الأجهزة بشبكة موحدة تتيح إدارة كل شيء بسهولة عن بُعد.
+                        </p>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">فوائد الأنظمة الذكية في المنازل</h4>
+                        <ul style="color: #666; margin-bottom: 15px; padding-left: 20px;">
+                            <li><strong>تعزيز الأمان:</strong> أنظمة المراقبة والإنذار الذكية تتيح مراقبة المنزل في أي وقت ومن أي مكان.</li>
+                            <li><strong>توفير الطاقة:</strong> أنظمة الإضاءة والتكييف الذكية تعمل بكفاءة وتساعد على تقليل استهلاك الكهرباء.</li>
+                            <li><strong>الراحة والسهولة:</strong> يمكن التحكم بجميع أنظمة المنزل من خلال تطبيق واحد فقط.</li>
+                            <li><strong>مراقبة عن بُعد:</strong> تتيح الأنظمة الذكية مشاهدة الكاميرات والتحكم بالأجهزة من خلال الجوال.</li>
+                            <li><strong>زيادة قيمة العقار:</strong> المنازل الذكية تُعتبر أكثر جاذبية عند البيع أو الإيجار.</li>
+                        </ul>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">أمثلة على الأنظمة الذكية</h4>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            - الأقفال الذكية التي تُفتح بالبصمة أو الهاتف.<br> - كاميرات المراقبة المتصلة بالجوال.<br> - أجهزة إنذار ضد السرقة والحريق متصلة بتطبيقات ذكية.<br> - أنظمة التحكم في الإضاءة والتكييف عن بُعد.
+                        </p>
+
+                        <h4 style="color: #7a6ad8; margin-bottom: 10px;">لماذا تختار شعار الأمان؟</h4>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                            في <strong>مؤسسة شعار الأمان</strong>، نوفّر لك أحدث تقنيات الأنظمة الذكية، مع خدمات تركيب احترافية، وضمان على الأجهزة، ودعم فني مستمر. هدفنا هو تحويل منزلك إلى بيئة ذكية وآمنة بكفاءة عالية.
+                        </p>
+
+                        <a href="index.html" style="margin-top: auto; text-align: center; color: #fff; background-color: #7a6ad8; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: 700; display: inline-block;">
+            احصل على استشارة مجانية الآن
+        </a>
+                    </div>
+                </article>
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer style="background-color: #7a6ad8; color: white; padding: 20px 0; font-family: 'Cairo', sans-serif; text-align: center; direction: rtl;">
+        <div class="container">
+            <img src="assets/images/logooo.png" alt="شعار شعار الأمان" style=" max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;">
+            <!-- <p style="margin: 5px 0;">© 2025 جميع الحقوق محفوظة.</p>
+          
+        </div> -->
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!-- أزرار الاتصال الثابتة -->
+    <div class="fixed-contact-buttons">
+        <a href="https://wa.me/96655456456565" target="_blank" class="whatsapp-btn" aria-label="واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+96655456456565" class="call-btn" aria-label="اتصال">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+
+</body>
+
+</html>
